@@ -2,20 +2,20 @@ body {
     background-color: rgba(83, 2, 70, 0.616);
 }
 
-table {
-  width: 100%;
-}
 
-table, th, td {
+
+.table {
     font-family: arial, sans-serif;
-  
-    border: 2px solid black;
+    border-collapse: collapse;
+    width: 10%;
+    width: 100px;
+
   }
 
-  th, td {
-    padding: 10px;
-    text-align: left;    
-    text-align: center;
+  .td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
   }
   
 
@@ -27,3 +27,5 @@ table, th, td {
     background-color: #964e60;
     color: rgb(187, 255, 240);
   }
+
+
