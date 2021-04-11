@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>tables</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="styletable.css" />
   </head>
 
   <body>
-
+    <fieldset>
         <table>
+                
                <caption>these are rows</caption>
+               
+                   <legend>rows</legend>
                 <tr>
                     <th>row1</th>
                     <th>row2</th>
@@ -29,12 +32,14 @@
 
                 </tr>
                 <tr>
-                    <th>colum1</th>
-                    <th>colum2</th>
-                    <th>colmu3</th>
+                    <td>colum1</td>
+                    <td>colum2</td>
+                    <td>colmu3</td>
                 </tr>
 
         </table>
+
+        </fieldset>
  
         <form action="/action_page.php">
             <p><label for="name">nimi:</label></p>
@@ -71,6 +76,27 @@
                 <label for="nochoice"> I have no choice</label><br>
 
             </form>
+
+            <br><br>
+
+            <h3>select</h3>
+
+            <form action="/action_page.php">
+                <label for="cars">pick a color:</label>
+                <select name="colors" id="colors" required>
+                  <option value="">None</option>
+                  <option value="white">white</option>
+                  <option value="black">black</option>
+                  <option value="purple">purple</option>
+                  <option value="transparent">transparent</option>
+                </select>
+              </form>
+              
+              <br><br>
+
+              <input type="submit" value="add new user">
+
+
   </body>
 </html>
 
