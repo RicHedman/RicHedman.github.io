@@ -2,29 +2,66 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>dogs</title>
-    <link rel="stylesheet" href="css/tyyli.css" />
+    <title>tables</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
 
-    <header>
-    <h1 class="border">koirat ovat jänniä</h1>
-  </header>
+        <table>
+               <caption>these are rows</caption>
+                <tr>
+                    <th>row1</th>
+                    <th>row2</th>
+                    <th>row3</th>
+                </tr>
+                <tr>
+                    <th colspan="3">this is merged cell</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">2colums</th>
+                    <th>row1</th>
+                    <th>row2</th>
+                </tr>
+                <tr>
+                    <th>row1</th>
+                    <th>row2</th>
 
-  <section>
-    <nav>
-      <ul>
-        <li><a href="second.html"> dog pictures</a></li>
-        <li><a href="third.html"> 3 sivu</a></li>
-      </ul>
-    </nav>
-   
-    </section>
+                </tr>
+                <tr>
+                    <th>colum1</th>
+                    <th>colum2</th>
+                    <th>colmu3</th>
+                </tr>
 
-    <progress value="100" max="200">100</progress>
-    progress on dog knowledge
+        </table>
  
+        <form action="/action_page.php">
+            <p><label for="name">nimi:</label></p>
+            <input type="text" id="name" name="username" required>
+          </form>
+
+          <form action="/action_page.php">
+            <p><label for="lastname">sukunimi:</label></p>
+            <input type="text" id="lastname" name="username" required>
+          </form>
+
+          <form action="/action_page.php">
+            <p><label for="username">email:</label></p>
+            <input type="email" id="username" name="username" required>
+          </form>
+
+          <h1>text area</h1>
+
+            <form action="/action_page">
+            <label for="textarea"> textbox:</label>
+            <br>
+            <textarea id="textarea" name="textbox" rows="4" cols="80">
+                this is a place for text
+            </textarea>
+            <imput type="submit" value="submit">
+            </form>
+
   </body>
 </html>
 
