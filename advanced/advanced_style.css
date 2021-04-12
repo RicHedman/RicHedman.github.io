@@ -1,1 +1,17 @@
+body
 
+
+
+.facts {
+    background-color: brown;
+    color: rgb(78, 173, 142);
+    border: 4px solid black;
+    text-align: center;
+    box-shadow: 7px 9px rgba(133, 10, 10, 0.781);
+}
+
+.textsha {
+
+    text-shadow: 2px 2px rgba(13, 172, 150, 0.863);
+    background-image: url("paper.gif");
+}
