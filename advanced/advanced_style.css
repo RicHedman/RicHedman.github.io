@@ -1,4 +1,6 @@
-body
+body {
+    background-color: rgba(90, 59, 23, 0.363);
+}
 
 
 
@@ -11,7 +13,39 @@ body
 }
 
 .textsha {
-
+    font-size: x-large;
+    text-align: center;
     text-shadow: 2px 2px rgba(13, 172, 150, 0.863);
-    background-image: url("paper.gif");
+    background-image: url(images/blue.jpg);
+    background-size: cover;
 }
+
+.links {
+    text-align: center;
+}
+
+
+
+.links a:hover {
+    color: rgba(216, 37, 37, 0.651);
+    transition: all 3s;
+
+}
+
+
+
+
+.links:hover{
+    text-align: center;
+    background: rgba(212, 124, 41, 0.637);
+    background-size: cover;
+    transition: all 1s;
+
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-color: tomato;
+        color: rgba(255, 255, 255, 0.973);
+    }
+  }
