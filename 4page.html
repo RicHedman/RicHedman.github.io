@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>when</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--        navbar         -->
+<nav class="navbar">
+    <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Color</a>
+        <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="index.html" class="navbar__links" id="home-page">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="2page.html" class="navbar__links" id="about-page">About</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#think" class="navbar__links" id="home-page">think</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#what" class="navbar__links" id="home-page">What</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="#" onclick="randomSite();" class="button" id="signup">luckybutton</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<div class="hero" id="home">
+    <div class="hero__container">
+    </div>
+</div>
+<script src="app.js"></script>
+<script>
+    var sites = [
+        'https://www.youtube.com/watch?v=vafVy_0P6OI&ab_channel=AsmrBeforesleep',
+        'https://www.youtube.com/watch?v=NLO3fmmsBKI&ab_channel=LorenzoSaroli',
+        'https://www.youtube.com/watch?v=J-Syy4OfoY0&ab_channel=Photon',
+        'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO'
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
+
+</body>
+</html>
