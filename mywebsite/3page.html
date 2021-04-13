@@ -31,7 +31,7 @@
                 <a href="#what" class="navbar__links" id="home-page">What</a>
             </li>
             <li class="navbar__btn">
-                <a href="#sing-up" class="button" id="signup">Sign up</a>
+                <a href="#" onclick="randomSite();" class="button" id="signup">luckybutton</a>
             </li>
         </ul>
     </div>
@@ -42,6 +42,19 @@
     </div>
 </div>
 <script src="app.js"></script>
+<script>
+    var sites = [
+        'https://www.youtube.com/watch?v=vafVy_0P6OI&ab_channel=AsmrBeforesleep',
+        'https://www.youtube.com/watch?v=NLO3fmmsBKI&ab_channel=LorenzoSaroli',
+        'https://www.youtube.com/watch?v=J-Syy4OfoY0&ab_channel=Photon',
+        'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO'
+    ];
+
+    function randomSite() {
+        var i = parseInt(Math.random() * sites.length);
+        location.href = sites[i];
+    }
+</script>
 
 </body>
 </html>
