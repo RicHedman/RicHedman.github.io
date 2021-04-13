@@ -255,3 +255,46 @@ background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, F
         font-size: 40px;
     }
 }
+
+.main__btn  {
+    font-size: 3.8rem;
+    background: #ff00cc;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 20px 60px;
+border: none;
+border-radius: 4px;
+margin-top: 2rem;
+cursor: pointer;
+position: relative;
+transition: all 0.35s;
+outline: none;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__btn:after   {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff1ead;
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover    {
+    color: #fff;
+
+}
+
+.main__btn:hover::after {
+    width: 100%;
+}
