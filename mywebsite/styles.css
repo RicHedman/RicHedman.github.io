@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+body   {
+    background-color: #131313;
+}
+
 .navbar {
     background: #131313;
     height: 80px;
