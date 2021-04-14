@@ -1,7 +1,5 @@
 .body   {
-    background-color: rgb(52, 0, 240);
-    align-content: left;
-    
+    background-color: #000000;
 }
 
 .furios    {
@@ -21,4 +19,9 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.0rem;
 }

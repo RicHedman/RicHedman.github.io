@@ -7,7 +7,7 @@
 }
 
 body   {
-    background-color: #131313;
+    background-color: #000000;
 }
 
 .navbar {
@@ -40,7 +40,7 @@ body   {
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -moz-text-fill-xolor: transparent;
+    -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
