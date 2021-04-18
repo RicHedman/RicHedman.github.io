@@ -29,7 +29,7 @@
                 <a href="3page.html" class="navbar__links" id="stuff-page">Stuff</a>
             </li>
             <li class="navbar__item">
-                <a href="4page.html" class="navbar__links" id="about-page">About</a>
+                <a href="4page.html" class="navbar__links" id="about-page">contact</a>
             </li>
             <li class="navbar__btn">
                 <a href="#" onclick="randomSite();" class="button" id="signup">Luckybutton</a>
@@ -58,6 +58,69 @@ Donec sed arcu quam. Phasellus sem enim, varius ac odio ac, lacinia tincidunt pu
 Vivamus a nulla vel lectus efficitur scelerisque. Donec euismod nunc urna, sit amet maximus tortor lacinia nec. Suspendisse neque lectus, semper eget turpis lobortis, iaculis aliquam lacus. Praesent vitae fermentum lacus. Fusce bibendum sapien vitae enim porta pulvinar. Mauris non turpis ut elit cursus iaculis. Etiam eget velit egestas, luctus libero a, molestie sapien. Nulla vel nisl mauris. Curabitur varius elit id elit ultricies vestibulum. Ut ac vulputate tellus. Proin tincidunt elit ac felis dictum, a lacinia diam venenatis. Nullam tempus nibh convallis efficitur bibendum. Duis luctus turpis eget aliquam vehicula. Integer sollicitudin nunc quis urna aliquet malesuada. Donec ornare pretium luctus.
         </p>
     </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="peace1.jpg" style="width:100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="peace2.jpg" style="width:100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="peace3.jpeg" style="width:100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
 
     <div class="why"></div>
 

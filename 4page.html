@@ -32,7 +32,7 @@
                 <a href="3page.html" class="navbar__links" id="stuff-page">Stuff</a>
             </li>
             <li class="navbar__item">
-                <a href="4page.html" class="navbar__links" id="about-page">About</a>
+                <a href="4page.html" class="navbar__links" id="about-page">Contact</a>
             </li>
             <li class="navbar__btn">
                 <a href="#" onclick="randomSite();" class="button" id="signup">Luckybutton</a>
@@ -74,6 +74,30 @@
       </div>
     </div>
   </div>
+  <br><br>
+  <div class="container">
+    <h3 class="text"> contact us</h3>
+    <form action="/action_page.php">
+      <label class="text" for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label class="text" for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label class="text" for="country">Country</label>
+      <select id="country" name="country">
+        <option value="Finland">Finland</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Russia">Russia</option>
+      </select>
+  
+      <label class="text" for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
   <br>
   <footer>
     <a href="#" class="fa fa-facebook"></a>
